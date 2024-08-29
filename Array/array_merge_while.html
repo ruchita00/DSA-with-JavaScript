@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+   let data1=[3,7,12,34,56,90]
+   let data2=[4,9,25,45]
+   let i=0;
+   let j=0;
+   let k=0
+   let mergeArray=[]
+
+   while(i<data1.length && j<data2.length){
+    if(data1[i]<data2[j]){
+        mergeArray[k]=data1[i]
+        i++
+    }else{
+        mergeArray[k]=data2[j]
+        j++
+    }
+    k++
+   }
+   while(i<data1.length){
+    mergeArray[k]=data1[i]
+    i++
+    k++
+   }
+   console.log(mergeArray);
+   
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
