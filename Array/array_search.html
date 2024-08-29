@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let data=[20,40,60,5,10,70,80,99]
+        let item=80
+    let index=undefined;
+        for(let i=0;i<data.length;i++){
+    if(data[i]===item){
+    index=i
+    break
+     }            
+        }
+        console.log(index)
+        console.log(data.indexOf(item))
+        console.log(data);
+        
+        console.log(data.splice(7,99));
+        console.log(data);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
