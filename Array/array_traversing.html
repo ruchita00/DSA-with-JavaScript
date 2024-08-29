@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script >
+        let data=[9,45,2,8,45,23,7,78,0,11,41,77]
+        for(let i=0;i<data.length;i++){
+            document.write(`Array of ${i} is ${data[i]}<br>`)
+        }
+
+        let x=3;
+        document.write(data[x])
+
+        function getElement(){
+            let el=document.getElementById("element").value
+            if(el<data.length && typeof parseInt(el)===Number){
+                alert(data[el])
+            }else{
+                alert("please enter valid input")
+            }
+        }
+
+    </script>
+</head>
+<body>
+    
+    <input type="text" id="element" />
+    <button onClick="getElement()">Get element</button>
+</body>
+</html>
